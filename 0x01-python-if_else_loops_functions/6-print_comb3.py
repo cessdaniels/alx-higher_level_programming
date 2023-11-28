@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-for f_digit in range(0, 10):
-    for s_digit in range(f_digit, 10):
-        if f_digit == s_digit:
-            continue
+# Author - Bamidele Adefolaju
+
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
         else:
-            if f_digit == 8 and s_digit == 9:
-                print("{}{} ".format(f_digit, s_digit), end="")
-            else:
-                print("{}{}, ".format(f_digit, s_digit), end="")
+            print("{}{}".format(digit1, digit2), end=", ")
